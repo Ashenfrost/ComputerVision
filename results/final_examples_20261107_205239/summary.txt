@@ -1,0 +1,19 @@
+final_examples_20261107_205239
+
+Model: results\yolov8n_640_b16_20261103_005628\weights\best.pt (imgsz 640, conf 0.25)
+637 testbilleder, 572 helt uden fejl
+
+eksempler.png (alle skilte fundet med rigtig klasse, ingen falske bokse):
+  Fartskilt, vejfoto: 001290_jpg.rf.d3a396f3ea066c80a6e76a48dcf798a2 [Vejfoto (000xxx)] -> Speed Limit 110 0.97
+  Stopskilt: 00014_00009_00022_png.rf.c59286af8197704e8e88c3efdbf7b9d5 [GTSRB-udsnit] -> Stop 0.97
+  Rødt lys: 001830_JPG_jpg.rf.80271bce54a1933c1c80ae661932ee2f [Vejfoto (000xxx)] -> Red Light 0.81, Red Light 0.70
+  Grønt lys: 000985_JPG_jpg.rf.858faffcae4167e233b829d2f744f34f [Vejfoto (000xxx)] -> Green Light 0.89
+  Simulator, små objekter: FisheyeCamera_1_00454_png.rf.69544c267e97e6de7d8ff36d70f8a8f6 [Simulator (fisheye)] -> Speed Limit 100 0.92
+  Flere skilte i ét billede: 001051_jpg.rf.bb8152d7d7c35ed73bfc9239185f9087 [Vejfoto (000xxx)] -> Speed Limit 80 0.94, Speed Limit 100 0.82, Speed Limit 100 0.78
+
+fejl.png:
+  Overset rødt lys: 000825_jpg.rf.dd850d3ac847bd61179c2191ebc02b37 [Vejfoto (000xxx)] overset: ['Red Light', 'Red Light'], falske bokse: 0
+  Overset grønt lys: 000935_jpg.rf.a73778e8e15369b4706431ac25671fb4 [Vejfoto (000xxx)] overset: ['Green Light'], falske bokse: 2
+  Falsk boks: 000809_jpg.rf.dcd99922c592f3b634ddb443bf40dce1 [Vejfoto (000xxx)] overset: -, falske bokse: 1
+
+Farver: grøn = rigtigt fund, rød = falsk/forkert boks, gul stiplet = overset sandt skilt.
