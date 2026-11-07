@@ -1,0 +1,42 @@
+robustness_20261102_181133
+
+== 1a. LYS (150 testbilleder, 185 skilte) ==
+Lysfaktor                0.3     0.5     0.7     1.0     1.3     1.6     2.0
+Klassisk C              0.5%   11.4%   18.4%   23.2%   25.9%   24.3%   18.4%
+Klassisk C + CNN        0.5%    8.6%   15.1%   19.5%   22.7%   18.4%   13.5%
+YOLOv8n                87.0%   90.8%   92.4%   92.4%   90.8%   86.5%   82.2%
+Klassisk C: fundet. Klassisk C + CNN og YOLOv8n: fundet med rigtig klasse.
+
+== 1b. STØRRELSE (korteste side i px; 637 testbilleder, 770 skilte) ==
+                                Klassisk C    Klassisk C + CNN             YOLOv8n      n
+< 8                                   0.0%                0.0%               66.1%    124
+8-16                                  0.0%                0.0%               86.4%     59
+16-32                                 0.0%                0.0%               95.0%     80
+32-64                                13.6%                8.0%               90.9%     88
+64-128                               31.4%               18.6%               96.6%    118
+>= 128                               43.5%               38.9%               98.7%    301
+Klassisk C: fundet. Klassisk C + CNN og YOLOv8n: fundet med rigtig klasse.
+
+== 1c. KILDE ==
+                                Klassisk C    Klassisk C + CNN             YOLOv8n      n
+GTSRB-udsnit                         43.0%               40.2%              100.0%    214
+Simulator (fisheye)                   0.0%                0.0%               70.4%    115
+Vejfoto (000xxx)                     27.7%               18.5%               92.5%    292
+road*.png                             4.7%                4.0%               90.6%    149
+Klassisk C: fundet. Klassisk C + CNN og YOLOv8n: fundet med rigtig klasse.
+
+== 4. HASTIGHED (100 billeder, 416x416, gennemsnit pr. billede) ==
+Metode                      ms/billede  billeder/s
+Klassisk C (CPU)                   5.7         174
+Klassisk C + CNN (GPU)             8.5         117
+Klassisk C + CNN (CPU)             9.7         103
+YOLOv8n (GPU)                     28.1          36
+YOLOv8n (CPU)                     57.5          17
+Klassisk C bruger kun OpenCV på CPU. Tider inkluderer forbehandling, ikke indlæsning af billedet.
+
+== 5. HOUGH-SWEEP (valideringssæt: 150 positive / 180 skilte, 140 negative inkl. 40 jordbær; minDist=40) ==
+param2                         10     15     20     25     30     35     40     50
+fundet % uden ring-tjek      40.0   38.3   36.1   35.6   33.9   26.7   13.3    3.3
+falske/negativt uden ring-tjek  10.96   6.31   3.55   1.40   0.54   0.14   0.06   0.00
+fundet % med ring-tjek       27.8   27.8   26.1   25.6   24.4   20.6    9.4    2.8
+falske/negativt med ring-tjek   0.44   0.39   0.31   0.16   0.07   0.03   0.01   0.00

@@ -1,0 +1,1 @@
+Yellow.png: HSV yellow [20, 100, 100]-[30, 255, 255], 13 contours, 2 with area > 500

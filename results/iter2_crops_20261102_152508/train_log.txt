@@ -1,0 +1,296 @@
+Loaded 15 classes: ['Green Light', 'Red Light', 'Speed Limit 10', 'Speed Limit 100', 'Speed Limit 110', 'Speed Limit 120', 'Speed Limit 20', 'Speed Limit 30', 'Speed Limit 40', 'Speed Limit 50', 'Speed Limit 60', 'Speed Limit 70', 'Speed Limit 80', 'Speed Limit 90', 'Stop']
+Removed 660 tiny boxes from cardata\train\images
+Removed 98 tiny boxes from cardata\valid\images
+Train samples (crops): 3638, Test samples (crops): 846
+
+Train crops per class:
+  Green Light      350
+  Red Light        341
+  Speed Limit 10   16
+  Speed Limit 100  258
+  Speed Limit 110  84
+  Speed Limit 120  247
+  Speed Limit 20   268
+  Speed Limit 30   312
+  Speed Limit 40   235
+  Speed Limit 50   254
+  Speed Limit 60   281
+  Speed Limit 70   285
+  Speed Limit 80   305
+  Speed Limit 90   117
+  Stop             285
+
+Using cuda device
+Net(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (bn3): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (conv4): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (bn4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+  (dropout1): Dropout2d(p=0.25, inplace=False)
+  (dropout2): Dropout(p=0.5, inplace=False)
+  (fc1): Linear(in_features=2048, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=15, bias=True)
+)
+
+Class weights: [0.69, 0.71, 15.16, 0.94, 2.89, 0.98, 0.9, 0.78, 1.03, 0.95, 0.86, 0.85, 0.8, 2.07, 0.85]
+Epoch 1
+-------------------------------
+loss: 2.795270  [  128/ 3638]
+loss: 2.412389  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 30.9%, Avg loss: 2.192839 
+
+New best model saved (30.9%)
+Epoch 2
+-------------------------------
+loss: 2.279504  [  128/ 3638]
+loss: 2.130849  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 36.3%, Avg loss: 1.936421 
+
+New best model saved (36.3%)
+Epoch 3
+-------------------------------
+loss: 1.912494  [  128/ 3638]
+loss: 1.990440  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 42.7%, Avg loss: 1.739546 
+
+New best model saved (42.7%)
+Epoch 4
+-------------------------------
+loss: 1.799584  [  128/ 3638]
+loss: 1.931907  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 47.9%, Avg loss: 1.611862 
+
+New best model saved (47.9%)
+Epoch 5
+-------------------------------
+loss: 1.891260  [  128/ 3638]
+loss: 1.684711  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 52.1%, Avg loss: 1.486062 
+
+New best model saved (52.1%)
+Epoch 6
+-------------------------------
+loss: 1.691720  [  128/ 3638]
+loss: 1.574369  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 55.2%, Avg loss: 1.325627 
+
+New best model saved (55.2%)
+Epoch 7
+-------------------------------
+loss: 1.567617  [  128/ 3638]
+loss: 1.460773  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 57.4%, Avg loss: 1.289043 
+
+New best model saved (57.4%)
+Epoch 8
+-------------------------------
+loss: 1.352307  [  128/ 3638]
+loss: 1.501120  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 70.7%, Avg loss: 0.942887 
+
+New best model saved (70.7%)
+Epoch 9
+-------------------------------
+loss: 1.235535  [  128/ 3638]
+loss: 0.969404  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 77.4%, Avg loss: 0.816755 
+
+New best model saved (77.4%)
+Epoch 10
+-------------------------------
+loss: 1.003827  [  128/ 3638]
+loss: 0.956538  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 81.4%, Avg loss: 0.616425 
+
+New best model saved (81.4%)
+Epoch 11
+-------------------------------
+loss: 0.942726  [  128/ 3638]
+loss: 0.839125  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 85.1%, Avg loss: 0.522749 
+
+New best model saved (85.1%)
+Epoch 12
+-------------------------------
+loss: 0.728699  [  128/ 3638]
+loss: 0.657739  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 88.8%, Avg loss: 0.447956 
+
+New best model saved (88.8%)
+Epoch 13
+-------------------------------
+loss: 0.542865  [  128/ 3638]
+loss: 0.726953  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 89.6%, Avg loss: 0.417078 
+
+New best model saved (89.6%)
+Epoch 14
+-------------------------------
+loss: 0.599770  [  128/ 3638]
+loss: 0.512181  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 90.8%, Avg loss: 0.402251 
+
+New best model saved (90.8%)
+Epoch 15
+-------------------------------
+loss: 0.693427  [  128/ 3638]
+loss: 0.602346  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 91.4%, Avg loss: 0.365505 
+
+New best model saved (91.4%)
+Epoch 16
+-------------------------------
+loss: 0.579330  [  128/ 3638]
+loss: 0.588504  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 91.3%, Avg loss: 0.358163 
+
+Epoch 17
+-------------------------------
+loss: 0.629312  [  128/ 3638]
+loss: 0.489228  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 92.0%, Avg loss: 0.353845 
+
+New best model saved (92.0%)
+Epoch 18
+-------------------------------
+loss: 0.668029  [  128/ 3638]
+loss: 0.497184  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 92.3%, Avg loss: 0.320611 
+
+New best model saved (92.3%)
+Epoch 19
+-------------------------------
+loss: 0.615819  [  128/ 3638]
+loss: 0.373279  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 92.8%, Avg loss: 0.307096 
+
+New best model saved (92.8%)
+Epoch 20
+-------------------------------
+loss: 0.378739  [  128/ 3638]
+loss: 0.575263  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.1%, Avg loss: 0.287764 
+
+New best model saved (93.1%)
+Epoch 21
+-------------------------------
+loss: 0.478278  [  128/ 3638]
+loss: 0.499573  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.0%, Avg loss: 0.285036 
+
+Epoch 22
+-------------------------------
+loss: 0.504822  [  128/ 3638]
+loss: 0.585232  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.279430 
+
+New best model saved (93.3%)
+Epoch 23
+-------------------------------
+loss: 0.403254  [  128/ 3638]
+loss: 0.558895  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.4%, Avg loss: 0.273795 
+
+New best model saved (93.4%)
+Epoch 24
+-------------------------------
+loss: 0.513564  [  128/ 3638]
+loss: 0.536167  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.274441 
+
+Epoch 25
+-------------------------------
+loss: 0.492335  [  128/ 3638]
+loss: 0.489909  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.1%, Avg loss: 0.272003 
+
+Epoch 26
+-------------------------------
+loss: 0.508082  [  128/ 3638]
+loss: 0.573251  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.4%, Avg loss: 0.268857 
+
+Epoch 27
+-------------------------------
+loss: 0.507702  [  128/ 3638]
+loss: 0.549266  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.6%, Avg loss: 0.262489 
+
+New best model saved (93.6%)
+Epoch 28
+-------------------------------
+loss: 0.593298  [  128/ 3638]
+loss: 0.527628  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.264276 
+
+Epoch 29
+-------------------------------
+loss: 0.618709  [  128/ 3638]
+loss: 0.428264  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.4%, Avg loss: 0.264081 
+
+Epoch 30
+-------------------------------
+loss: 0.382551  [  128/ 3638]
+loss: 0.585985  [ 2688/ 3638]
+Test Error: 
+ Accuracy: 93.3%, Avg loss: 0.265181 
+
+Done! Best accuracy: 93.6%
+                 precision    recall  f1-score   support
+
+    Green Light       1.00      0.98      0.99        84
+      Red Light       0.99      0.99      0.99        76
+ Speed Limit 10       0.00      0.00      0.00         0
+Speed Limit 100       0.98      0.96      0.97        49
+Speed Limit 110       1.00      1.00      1.00        16
+Speed Limit 120       0.95      0.90      0.92        60
+ Speed Limit 20       0.98      0.93      0.95        55
+ Speed Limit 30       0.97      0.90      0.94        73
+ Speed Limit 40       0.98      0.93      0.95        55
+ Speed Limit 50       0.90      0.90      0.90        67
+ Speed Limit 60       0.89      0.90      0.90        72
+ Speed Limit 70       0.99      1.00      0.99        75
+ Speed Limit 80       0.88      0.85      0.87        53
+ Speed Limit 90       0.83      0.80      0.81        30
+           Stop       0.98      1.00      0.99        81
+
+       accuracy                           0.94       846
+      macro avg       0.89      0.87      0.88       846
+   weighted avg       0.95      0.94      0.94       846
+
+Saved confusion matrix to confusion_matrix_crops.png
+Saved Grad-CAM visualizations to gradcam_examples_crops.png

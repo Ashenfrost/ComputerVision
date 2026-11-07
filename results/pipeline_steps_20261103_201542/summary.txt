@@ -1,0 +1,16 @@
+pipeline_steps_20261103_201542
+
+Klassisk pipeline, trin C (samme parametre som negative_test.py)
+
+1. Stort skilt: 000015_jpg.rf.1c60d15418d0291507def26c241ed27e
+   Hough-cirkler: 2 cirkler, efter ring-tjek: 2 tilbage
+   CNN: Speed Limit 30 (0.47), Speed Limit 30 (0.85)
+2. Lille skilt: 000809_jpg.rf.dcd99922c592f3b634ddb443bf40dce1
+   Hough-cirkler: 0 cirkler, efter ring-tjek: 0 tilbage
+3. Jordbær, afvist: Image_1
+   Hough-cirkler: 5 cirkler, efter ring-tjek: 0 tilbage
+4. Jordbær, falsk alarm: Image_15
+   Hough-cirkler: 10 cirkler, efter ring-tjek: 1 tilbage
+   CNN: Red Light (0.81)
+
+Farver: gul = sandt skilt, blå = Hough-cirkel, grøn = beholdt, tynd blå (trin 8) = afvist af ring-tjek.

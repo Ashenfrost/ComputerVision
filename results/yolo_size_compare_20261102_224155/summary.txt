@@ -1,0 +1,23 @@
+yolo_size_compare_20261102_224155
+
+Trænet 416: results\yolov8n_20261102_163040\weights\best.pt
+Trænet 640: results\yolov8n_640_20261102_184940\weights\best.pt
+Trænet 832 (batch 16): results\yolov8n_832_b16_20261102_213212\weights\best.pt
+
+== Andel skilte fundet med rigtig klasse, efter størrelse (korteste side i px) ==
+                       Trænet 416             Trænet 640  Trænet 832 (batch 16)      n
+< 8                         66.1%                  77.4%                  82.3%    124
+8-16                        86.4%                  94.9%                  91.5%     59
+16-32                       95.0%                  93.8%                  93.8%     80
+32-64                       90.9%                  92.0%                  96.6%     88
+64-128                      96.6%                  99.2%                 100.0%    118
+>= 128                      98.7%                  97.3%                  98.3%    301
+I alt                       90.9%                  93.2%                  94.8%
+
+== Hastighed (100 billeder, gennemsnit pr. billede) ==
+Trænet 416 (GPU)                   25.0 ms     40 billeder/s
+Trænet 416 (CPU)                   59.1 ms     17 billeder/s
+Trænet 640 (GPU)                   27.6 ms     36 billeder/s
+Trænet 640 (CPU)                  105.7 ms      9 billeder/s
+Trænet 832 (batch 16) (GPU)        30.3 ms     33 billeder/s
+Trænet 832 (batch 16) (CPU)       159.3 ms      6 billeder/s

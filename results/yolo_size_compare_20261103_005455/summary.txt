@@ -1,0 +1,23 @@
+yolo_size_compare_20261103_005455
+
+yolov8n 416: results\yolov8n_20261102_163040\weights\best.pt
+yolov8n-p2 416: C:\Users\tobia\ComputerVision\results\yolov8n-p2_416_20261102_233939\weights\best.pt
+yolov8s 416: C:\Users\tobia\ComputerVision\results\yolov8s_416_20261103_001700\weights\best.pt
+
+== Andel skilte fundet med rigtig klasse, efter størrelse (korteste side i px) ==
+               yolov8n 416  yolov8n-p2 416     yolov8s 416      n
+< 8                  66.1%           47.6%           69.4%    124
+8-16                 86.4%           72.9%           96.6%     59
+16-32                95.0%           85.0%           96.2%     80
+32-64                90.9%           86.4%           95.5%     88
+64-128               96.6%           99.2%           99.2%    118
+>= 128               98.7%           97.7%           98.0%    301
+I alt                90.9%           85.3%           93.0%
+
+== Hastighed (100 billeder, gennemsnit pr. billede) ==
+yolov8n 416 (GPU)           21.1 ms     47 billeder/s
+yolov8n 416 (CPU)           45.3 ms     22 billeder/s
+yolov8n-p2 416 (GPU)        24.4 ms     41 billeder/s
+yolov8n-p2 416 (CPU)        64.2 ms     16 billeder/s
+yolov8s 416 (GPU)           21.2 ms     47 billeder/s
+yolov8s 416 (CPU)           92.0 ms     11 billeder/s

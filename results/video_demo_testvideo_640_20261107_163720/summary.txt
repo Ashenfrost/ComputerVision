@@ -1,0 +1,4 @@
+testvideo.mp4: 508 billeder, video 30 fps
+YOLOv8n 640 (GPU): 28.0 ms/billede = 35.7 FPS
+Klassisk C + CNN: 3.7 ms/billede = 273.8 FPS
+YOLO KAN følge med videoens 30 fps.

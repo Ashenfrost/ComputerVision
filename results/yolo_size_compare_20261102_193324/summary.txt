@@ -1,0 +1,19 @@
+yolo_size_compare_20261102_193324
+
+640-kørsel: results\yolov8n_640_20261102_184940
+
+== Andel skilte fundet med rigtig klasse, efter størrelse (korteste side i px) ==
+              Trænet 416    Trænet 640      n
+< 8                66.1%         77.4%    124
+8-16               86.4%         94.9%     59
+16-32              95.0%         93.8%     80
+32-64              90.9%         92.0%     88
+64-128             96.6%         99.2%    118
+>= 128             98.7%         97.3%    301
+I alt              90.9%         93.2%
+
+== Hastighed (100 billeder, gennemsnit pr. billede) ==
+Trænet 416 (GPU)          23.4 ms     43 billeder/s
+Trænet 416 (CPU)          50.2 ms     20 billeder/s
+Trænet 640 (GPU)          28.2 ms     35 billeder/s
+Trænet 640 (CPU)          90.4 ms     11 billeder/s

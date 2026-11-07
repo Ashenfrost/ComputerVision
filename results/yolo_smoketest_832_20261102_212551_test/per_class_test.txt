@@ -1,0 +1,20 @@
+yolo_smoketest_832_20261102_212551 -- test-sæt
+mAP50:    0.000
+mAP50-95: 0.000
+
+Klasse                P      R  mAP50
+Green Light       0.000  0.000  0.000
+Red Light         0.000  0.000  0.000
+Speed Limit 10    0.000  0.000  0.000
+Speed Limit 100   0.000  0.000  0.000
+Speed Limit 110   0.000  0.000  0.000
+Speed Limit 120   0.000  0.000  0.000
+Speed Limit 20    0.000  0.000  0.000
+Speed Limit 30    0.000  0.000  0.000
+Speed Limit 40    0.000  0.000  0.000
+Speed Limit 50    0.000  0.000  0.000
+Speed Limit 60    0.000  0.000  0.000
+Speed Limit 70    0.000  0.000  0.000
+Speed Limit 80    0.000  0.000  0.000
+Speed Limit 90    0.000  0.000  0.000
+Stop              0.000  0.000  0.000

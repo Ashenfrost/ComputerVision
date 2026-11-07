@@ -1,0 +1,20 @@
+yolov8n_832_b16_20261102_213212 -- test-sæt
+mAP50:    0.969
+mAP50-95: 0.828
+
+Klasse                P      R  mAP50
+Green Light       0.914  0.836  0.943
+Red Light         0.945  0.732  0.815
+Speed Limit 10    0.880  1.000  0.995
+Speed Limit 100   0.984  1.000  0.995
+Speed Limit 110   0.989  0.905  0.925
+Speed Limit 120   0.972  1.000  0.978
+Speed Limit 20    1.000  0.976  0.975
+Speed Limit 30    0.989  0.967  0.991
+Speed Limit 40    1.000  0.980  0.985
+Speed Limit 50    0.952  0.960  0.980
+Speed Limit 60    1.000  0.990  0.995
+Speed Limit 70    0.981  0.955  0.982
+Speed Limit 80    0.980  1.000  0.995
+Speed Limit 90    0.963  0.941  0.980
+Stop              0.992  1.000  0.995

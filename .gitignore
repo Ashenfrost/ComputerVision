@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Projektspecifikt: store eller genskabelige filer (hentes/genereres igen) ---
+NVIDIA_app_*.exe
+cardata/
+data/
+*.pt
+*.pth
